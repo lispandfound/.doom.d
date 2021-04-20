@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Maths Brackets 
+# key: br
+# --
+\left($1\right)

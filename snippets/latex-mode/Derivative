@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Derivative
+# key: dx
+# --
+\diff{$1}{$2}
