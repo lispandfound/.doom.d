@@ -1,0 +1,6 @@
+# key: subq
+# name: subquestions
+# --
+\begin{enumerate}[(\itshape a\normalfont)]
+    \item $1
+\end{enumerate}
