@@ -11,8 +11,10 @@
 
       ;; avy-keys is not dvorak friendly by default
       avy-keys '(?a ?o ?e ?u ?i ?d ?h ?t ?n ?s)
+
       ;; eldoc got this one covered
       lsp-ui-sideline-enable nil
+
       ;; These don't do what you (future me) think they do, so don't remove them!
       ;; They simply switch window focus when you split the window, saves a keystroke.
       evil-split-window-below t
@@ -26,6 +28,9 @@
       undo-limit 80000000
 
       +ivy-buffer-preview t
+
+      ;; Allows for nested yasnippet expansions, not sure why this is not the default.
+      yas-triggers-in-field t
 
       browse-url-browser-function 'browse-url-firefox
 
