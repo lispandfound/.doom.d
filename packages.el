@@ -55,3 +55,4 @@
 ;; Until tree-sitter hits develop
 (package! tree-sitter)
 (package! tree-sitter-langs)
+(package! skeletor)
