@@ -74,3 +74,24 @@
 
 (add-hook! '+doom-dashboard-mode-hook (hide-mode-line-mode 1) (hl-line-mode -1))
 (setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
+(defun jake/latex-compile-and-view ()
+  (interactive)
+  (TeX-command-run-all nil)
+  (TeX-view))
+
+(map! :after latex
+      :map LaTeX-mode-map
+      :localleader
+      :desc "Compile" "c" #'jake/latex-compile-and-view)
+(map! :localleader
+      :map latex-mode-map
+      :desc "Compile" "c" #'jake/latex-compile-and-view)
+
+(setq skeletor-user-directory (concat doom-private-dir "project-skeletons"))
+(skeletor-define-template "assignment"
+  :title "Assignment")
+(skeletor-define-template "report"
+  :title "Report")
+(map! :leader
+      :desc "Create new project"
+      "p n" #'skeletor-create-project-at)
