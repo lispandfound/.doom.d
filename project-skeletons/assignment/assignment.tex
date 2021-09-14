@@ -1,0 +1,92 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% fphw Assignment
+% LaTeX Template
+% Version 1.0 (27/04/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Class by Felipe Portales-Oliva (f.portales.oliva@gmail.com) with template
+% content and modifications by Vel (vel@LaTeXTemplates.com)
+%
+% Template (this file) License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% ----------------------------------------------------------------------------------------
+\documentclass[
+12pt, % Default font size, values between 10pt-12pt are allowed
+% letterpaper, % Uncomment for US letter paper size
+% spanish, % Uncomment for Spanish
+]{fphw}
+
+% Template-specific packages
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage{esdiff}
+\usepackage{graphicx} % Required for including images
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{mathtools}
+\usepackage{listings} % Required for insertion of code
+\usepackage{subfig}
+\usepackage{enumerate} % To modify the enumerate environment
+\usepackage{placeins}
+\usepackage{tikz}
+\usepackage{biblatex}
+\usepackage{faktor}
+\usetikzlibrary{arrows}
+\usetikzlibrary{graphs}
+\usetikzlibrary{graphs.standard}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+% ----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+% ----------------------------------------------------------------------------------------
+\DeclareMathOperator{\val}{val}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\degree}{deg}
+\DeclareMathOperator{\orb}{orb}
+\DeclareMathOperator{\stab}{stab}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\newcommand\SetSymbol[1][]{\nonscript\:#1\vert\allowbreak\nonscript\:\mathopen{}}
+\providecommand\given{} % to make it exist
+\DeclarePairedDelimiterX\Set[1]\{\}{\renewcommand\given{\SetSymbol[\delimsize]}#1}
+
+\title{Assignment 2} % Assignment title
+
+\author{Jake Faulkner} % Student name
+
+\date{Due Date} % Due date
+
+\institute{University of Canterbury} % Institute or school name
+
+\class{Class Name} % Course or class name
+
+% \professor{Dr. Albert Einstein} % Professor or teacher in charge of the assignment
+
+% ----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Output the assignment title, created automatically using the information in the custom commands above
+\newpage
+% ----------------------------------------------------------------------------------------
+%	ASSIGNMENT CONTENT
+% ----------------------------------------------------------------------------------------
+\end{document}

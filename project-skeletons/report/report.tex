@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage{esdiff}
+\usepackage{graphicx} % Required for including images
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{booktabs} % Required for better horizontal rules in tables
+\usepackage{mathtools}
+\usepackage{listings} % Required for insertion of code
+\usepackage{subfig}
+\usepackage{enumerate} % To modify the enumerate environment
+\usepackage{placeins}
+\usepackage{tikz}
+\usepackage{biblatex}
+\usepackage{faktor}
+\addbibresource{references.bib}
+\usetikzlibrary{arrows}
+\usetikzlibrary{graphs}
+\usetikzlibrary{graphs.standard}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin -20pt
+\headsep 10pt
+\textheight 8.7in
+\textwidth 6.65in
+\linespread{1.2}
+
+\title{Report Title}
+\author{Jake Faulkner}
+\date{}
+
+\DeclareMathOperator{\aff}{aff}
+\DeclareMathOperator{\val}{val}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\degree}{deg}
+\DeclareMathOperator{\orb}{orb}
+\DeclareMathOperator{\stab}{stab}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\newcommand\SetSymbol[1][]{\nonscript\:#1\vert\allowbreak\nonscript\:\mathopen{}}
+\providecommand\given{} % to make it exist
+\DeclarePairedDelimiterX\Set[1]\{\}{\renewcommand\given{\SetSymbol[\delimsize]}#1}
+
+\begin{document}
+
+\maketitle
+
+\printbibliography%
+
+\end{document}
