@@ -1,7 +1,7 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
 (setq doom-theme 'doom-one
-      doom-font "FiraCode Nerd Font 9"
+      doom-font "Iosevka 9"
       langtool-default-language "en-NZ"
       org-directory "~/org"
 
